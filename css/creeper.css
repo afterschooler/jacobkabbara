@@ -1,0 +1,44 @@
+@import "style";
+
+.creeper-head { 
+	position: relative;
+	width: 500px; 
+	height: 500px;
+	background-color: #8AD97E;
+}
+
+.creeper-eye, .creeper-mouth { 
+	position: absolute; 
+	width: 100px;
+	background-color: black;
+}
+
+.creeper-eye {
+	top: 100px;
+	height: 100px;
+}
+
+.creeper-mouth {
+	top: 250px;
+	height: 150px;
+}
+
+@keyframes explode { 
+	10% { scale: 1.2 }
+	30% { scale: 1.2 }
+	50% { scale: 1.2 }
+	70% { scale: 1.2 }
+	90% { scale: 1.2 }
+
+	20% { scale: 0.8 }
+	40% { scale: 0.8 }
+	60% { scale: 0.8 }
+	80% { scale: 0.8 }
+	100% { scale: 0.8 }
+}
+
+.exploding-animation {
+	animation: explode 3s 1;
+}
+
+
