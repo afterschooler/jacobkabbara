@@ -24,13 +24,13 @@
 }
 
 @keyframes explode { 
-	10% { scale: 1.2 }
-	30% { scale: 1.2 }
-	50% { scale: 1.2 }
-	70% { scale: 1.2 }
-	90% { scale: 1.2 }
+	10% { scale: 1.2;rotate: 90deg; }
+	30% { scale: 1.2; rotate: -90deg;}
+	50% { scale: 1.2; rotate: 0deg; }
+	70% { scale: 1.2; rotate: 90deg; }
+	90% { scale: 1.2; rotate: -90deg; }
 
-	20% { scale: 0.8 }
+	20% { scale: 0.8; border-radius: 50%; }
 	40% { scale: 0.8 }
 	60% { scale: 0.8 }
 	80% { scale: 0.8 }
@@ -38,6 +38,7 @@
 }
 
 .exploding-animation {
+	background-color: pink;
 	animation: explode 3s 1;
 }
 
