@@ -8,7 +8,7 @@ function main() {
 	creeperHead.addEventListener("click", () => {
 		creeperHead.classList.add("exploding-animation");
 		waitInterval(2);
-	}
+	}); 
 }
 
 const waitInterval = (second) => {
